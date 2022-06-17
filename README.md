@@ -1,5 +1,5 @@
 
-####ARCHITECTURE
+#### ARCHITECTURE
 ```mermaid
 sequenceDiagram
 participant postman
@@ -35,7 +35,7 @@ curl --location --request POST 'http://localhost:8081/task' \
 
 #### CONCLUSION
 ```java
-2 Due to a tight schedule, part of the function have yet been completed, 
+Due to a tight schedule, part of the function have yet been completed, 
 - Dockerization of the whole project with dockfile and docker-compose
 - Error logging& reporting in the case of exception encountered in task handing on the client side
 - Part of the comments in the code is written in Chinese instead of English
