@@ -5,12 +5,13 @@ sequenceDiagram
 participant postman
 
 client->>server: 1 register node
-Note left of client: periodicly heartbeat
+Note right of client: periodicly heartbeat
 Note right of server: periodicly evict expired node
 postman->>server: 2 add/update/delete task cron info by Restful Api
 loop schedule
-	server->>server: schedule task based on cron
+	server->>server: refresh task trigger time based on cron
 end
+server->>client: 3 trigger task
 ```
 #### RUN & TEST
 ```java
